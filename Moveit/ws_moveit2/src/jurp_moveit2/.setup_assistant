@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: jurp1
+    relative_path: urdf/jurp1.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/jurp1.srdf
+  CONFIG:
+    author_name: Jon Arrizabalaga
+    author_email: arrijon96@gmail.com
+    generated_timestamp: 1575506539

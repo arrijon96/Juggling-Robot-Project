@@ -1,0 +1,8 @@
+prefix=/home/jonarriza96/ws_moveit2/install
+
+Name: jurp1_jurp_all_ikfast_plugin
+Description: Description of jurp1_jurp_all_ikfast_plugin
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jonarriza96/ws_moveit2/install/lib 
+Requires: 

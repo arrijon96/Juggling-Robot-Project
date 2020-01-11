@@ -1,0 +1,8 @@
+prefix=/home/jonarriza96/ws_moveit2/devel
+
+Name: jurp1
+Description: Description of jurp1
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/jonarriza96/ws_moveit2/devel/lib 
+Requires: 

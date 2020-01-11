@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library path="lib/libjurp1_jurp_all_moveit_ikfast_plugin">
+  <class base_class_type="kinematics::KinematicsBase" name="jurp1_jurp_all/IKFastKinematicsPlugin" type="jurp1_jurp_all::IKFastKinematicsPlugin">
+    <description>IKFast61 plugin for closed-form kinematics of jurp1 jurp_all</description>
+  </class>
+</library>

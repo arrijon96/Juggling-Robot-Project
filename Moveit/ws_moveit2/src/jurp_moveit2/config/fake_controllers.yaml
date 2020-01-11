@@ -1,0 +1,6 @@
+controller_list:
+  - name: fake_jurp_all_controller
+    joints:
+      - Shoulder_Joint
+      - Transverse_Joint
+      - Elbow_Joint

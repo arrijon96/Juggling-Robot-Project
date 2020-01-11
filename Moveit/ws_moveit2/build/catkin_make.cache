@@ -1,0 +1,2 @@
+jurp1:jurp1_jurp_all_ikfast_plugin:jurp_moveit2
+-DCATKIN_DEVEL_PREFIX=/home/jonarriza96/ws_moveit2/devel -DCMAKE_INSTALL_PREFIX=/home/jonarriza96/ws_moveit2/install -G Unix Makefiles

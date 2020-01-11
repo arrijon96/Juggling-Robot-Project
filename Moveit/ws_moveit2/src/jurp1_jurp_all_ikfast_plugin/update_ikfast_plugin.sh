@@ -1,0 +1,1 @@
+rosrun moveit_kinematics create_ikfast_moveit_plugin.py --search_mode=OPTIMIZE_MAX_JOINT --srdf_filename=jurp1.srdf --robot_name_in_srdf=jurp1 --moveit_config_pkg=jurp1_moveit_config jurp1 jurp_all jurp1_jurp_all_ikfast_plugin base_link Hand_Link /home/jonarriza96/ws_moveit2/src/jurp1_jurp_all_ikfast_plugin/src/jurp1_jurp_all_ikfast_solver.cpp

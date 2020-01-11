@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="jurp1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0040215 -6.9389E-18 0.60054"
+        rpy="0 0 0" />
+      <mass
+        value="0.0067725" />
+      <inertia
+        ixx="0.0020603"
+        ixy="-2.545E-20"
+        ixz="-1.8985E-05"
+        iyy="0.0020731"
+        iyz="5.2437E-21"
+        izz="0.00010392" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.34902 0.2549 0.1098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Shoulder_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0.082946"
+        rpy="0 0 0" />
+      <mass
+        value="0.028882" />
+      <inertia
+        ixx="6.178E-05"
+        ixy="4.7651E-23"
+        ixz="-1.3857E-21"
+        iyy="6.184E-05"
+        iyz="-9.4857E-22"
+        izz="9.1409E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/Shoulder_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/Shoulder_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Shoulder_Joint"
+    type="continuous">
+    <origin
+      xyz="0.09434 0 1.2976"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Shoulder_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Transverse_Link">
+    <inertial>
+      <origin
+        xyz="0 -2.7756E-17 0.22141"
+        rpy="0 0 0" />
+      <mass
+        value="0.051725" />
+      <inertia
+        ixx="0.00074803"
+        ixy="-1.822E-23"
+        ixz="4.3183E-21"
+        iyy="0.00074804"
+        iyz="-2.7452E-23"
+        izz="1.5605E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/Transverse_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/Transverse_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Transverse_Joint"
+    type="continuous">
+    <origin
+      xyz="0 0.008 0.14186"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="Shoulder_Link" />
+    <child
+      link="Transverse_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Elbow_Link">
+    <inertial>
+      <origin
+        xyz="6.9389E-18 0 -0.30816"
+        rpy="0 0 0" />
+      <mass
+        value="0.22034" />
+      <inertia
+        ixx="0.0019431"
+        ixy="8.3139E-22"
+        ixz="-3.3847E-20"
+        iyy="0.0019426"
+        iyz="2.3697E-20"
+        izz="3.4415E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/Elbow_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/Elbow_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Elbow_Joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.3759"
+      rpy="3.1416 0 0" />
+    <parent
+      link="Transverse_Link" />
+    <child
+      link="Elbow_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Hand_Link">
+    <inertial>
+      <origin
+        xyz="-0.013709 0.061574 -0.019941"
+        rpy="0 0 0" />
+      <mass
+        value="0.13162" />
+      <inertia
+        ixx="0.0002218"
+        ixy="-2.8382E-05"
+        ixz="-1.418E-06"
+        iyy="0.00025613"
+        iyz="-4.9558E-05"
+        izz="0.00021467" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/Hand_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jurp1/meshes/Hand_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hand_Joint"
+    type="fixed">
+    <origin
+      xyz="0.10033 0.0005 -0.4282"
+      rpy="0.66706 -0.37909 1.2399" />
+    <parent
+      link="Elbow_Link" />
+    <child
+      link="Hand_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
